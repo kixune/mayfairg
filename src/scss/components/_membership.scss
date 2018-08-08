@@ -1,0 +1,201 @@
+section.membership {
+    .container {
+        .membership__title {
+            margin-bottom: 20px;
+
+            @media #{$md-bp} {
+                margin-bottom: 40px;
+            }
+        }
+
+        .membership__desc {
+            margin-bottom: 20px;
+
+            @media #{$sm-bp} {
+                max-width: 660px;
+            }
+
+            @media #{$md-bp} {
+                max-width: 730px;
+                margin-bottom: 40px;
+            }
+
+            @media #{$lg-bp} {
+                max-width: 683px;
+            }
+
+            p {
+                line-height: 1.2em;
+            }
+        }
+
+        .membership__types,
+        .membership__benefits {
+            border-left: solid 1px #d3d3d3;
+
+            @media #{$ssl-bp} {
+                border-left: none;
+            }
+        }
+
+        // Types
+        .membership__types {
+            margin-top: 75px;
+
+            @media #{$md-bp} {
+                margin-top: 0;
+                padding-top: 150px;
+                margin-bottom: 0;
+            }
+        }
+
+        .membership__types-heading,
+        .membership__type-number,
+        .membership__type-name,
+        .membership__type-desc,
+        .membership__benefits-heading,
+        .membership__benefits-name,
+        .membership__benefits-desc {
+            padding: 0 20px;
+
+            @media #{$sm-bp} {
+                padding: 0 30px;
+            }
+        }
+
+        .membership__types-heading {
+            margin-bottom: 40px;
+            max-width: 150px;
+
+            @media #{$sm-bp} {
+                max-width: 200px;
+            }
+
+            @media #{$lg-bp} {
+                max-width: 270px;
+            }
+        }
+
+        .membership__type-number {
+            color: #d3d3d3;
+        }
+
+        .membership__type-name {
+            width: 96px;
+            margin-bottom: 26px;
+
+            @media #{$lg-bp} {
+                width: 135px;
+                margin-bottom: 40px;
+            }
+        }
+
+        .membership__type-desc {
+            line-height: 1.2em;
+            margin-bottom: 40px;
+
+            @media #{$sm-bp} {
+                margin: 0;
+
+            }
+        }
+
+        [class*="col-"]:last-child {
+            .membership__type-desc {
+                margin-bottom: 0;
+            }
+        }
+
+        // Benefits
+        .membership__benefits {
+            padding-top: 75px;
+
+            @media #{$ssl-bp} {
+                padding-top: 0;
+            }
+
+            .grid-divider:first-child {
+                @media #{$ssl-bp} {
+                    padding-top: 75px;
+                }
+
+                @media #{$md-bp} {
+                    padding-top: 150px;
+                }
+            }
+
+            .grid-divider:last-child {
+
+                @media #{$sm-bp} {
+                    padding-top: 40px;
+                }
+
+                @media #{$md-bp} {
+                    padding-top: 80px;
+                }
+            }
+        }
+
+        .membership__benefits-heading {
+            margin-bottom: 40px;
+            max-width: 150px;
+
+            @media #{$sm-bp} {
+                margin-bottom: 0;
+            }
+        }
+
+        .membership__benefits-name {
+            width: 160px;
+            margin-bottom: 26px;
+
+            @media #{$sm-bp} {
+                width: 180px;
+            }
+
+            @media #{$md-bp} {
+                width: 200px;
+            }
+
+            @media #{$lg-bp} {
+                margin-bottom: 40px;
+                width: 230px;
+            }
+        }
+
+        .membership__benefits-desc {
+            line-height: 1.2em;
+            margin-bottom: 40px;
+
+            @media #{$sm-bp} {
+                margin-bottom: 0;
+            }
+        }
+
+        .membership__benefits-desc[data-last="column"] {
+            margin: 0;
+        }
+    }
+}
+
+
+@media #{$ssl-bp} {
+    .grid-divider {
+        position: relative;
+        padding: 0;
+    }
+    .grid-divider>[class*='col-'] {
+        position: static;
+    }
+    .grid-divider>[class*='col-']:before {
+        content: "";
+        border-left: 1px solid #d3d3d3;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+}
+
+
+// *** NOTICE ***
+// further font type styling can be found in type.scss

@@ -1,0 +1,139 @@
+.link__container {
+    .link__arrow {
+
+        background: url('../../img/arrow.svg') no-repeat;
+        background-position: right 15px;
+        background-size: 10px;
+
+        @media #{$md-bp} {
+            background-size: 1.4em;
+            background-position: right 26px !important;
+        }
+
+        p {
+            font-size: 1.4em;
+            line-height: 1.2em;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 7px;
+
+            @media #{$md-bp} {
+                font-size: 1.8em;
+                letter-spacing: 9px;
+            }
+
+            @media #{$lg-bp} {
+                font-size: 2em;
+                letter-spacing: 10px;
+            }
+        }
+    }
+}
+
+.link__arrow--contact-us {
+
+    @extend .link__arrow;
+
+    max-width: 174px;
+
+    p {
+        width: 174px;
+
+        @media #{$md-bp} {
+            width: 249px;
+        }
+    }
+
+    @media #{$md-bp} {
+        max-width: 249px;
+    }
+}
+
+.link__arrow--membership,
+.link__arrow--membership--last {
+    @extend .link__arrow;
+
+    background-position: right bottom 10px !important;
+    
+    @media #{$sm-bp} {
+        background-position: right center !important;
+        max-width: 430px;
+    }
+
+    @media #{$md-bp} {
+        background-position: right 25px !important;
+        max-width: 500px;
+    }
+
+    @media #{$lg-bp} {
+        max-width: 660px;
+    }
+
+    p {
+        width: 80%;
+
+        @media #{$sm-bp} {
+            width: 100%;
+        }
+    }
+
+    @media #{$sm-bp} {
+        background-position: right center !important;
+    }
+}
+
+.link__arrow-underline {
+    position: relative;
+    padding: 10px 0 6px 0;
+    border-bottom: 1px #555555 solid;
+    cursor: pointer;
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+
+    @media #{$md-bp} {
+        padding: 20px 0 12px 0;
+    }
+}
+
+.link__arrow-underline:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -1px;
+    background: #555555;
+    height: 1px;
+
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.link__arrow-underline:hover:before,
+.link__arrow-underline:focus:before,
+.link__arrow-underline:active:before {
+    right: 0;
+}
+
+.link__arrow-underline:hover,
+.link__arrow-underline:focus,
+.link__arrow-underline:active {
+    border-bottom: 1px solid #fff;
+}
+
+a.underlined {
+    text-decoration: underline;
+    display: inline;
+}
+
+// *** NOTICE ***
+// further font type styling can be found in type.scss

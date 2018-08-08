@@ -1,0 +1,39 @@
+.section__divider {
+    background: url('../../img/m_line1.svg') no-repeat;
+
+    @media #{$sm-bp} {
+        background: url('../../img/line1.svg') no-repeat;
+    }
+}
+
+.section__divider--mirror {
+    background: url('../../img/m_line2.svg') no-repeat;
+
+    @media #{$sm-bp} {
+        background: url('../../img/line2.svg') no-repeat;
+    }
+}
+
+.section__divider--mirror,
+.section__divider {
+    height: 230px;
+    background-position: center center;
+    background-size: 100%;
+
+    @media #{$sm-bp} {
+        background-position: center center;
+    }
+
+    @media #{$md-bp} {
+        height: 270px;
+        background-position: center center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        background-size: 100%;
+    }
+
+    @media #{$lg-bp} {
+        height: 370px;
+        background-size: 100%;
+    }
+}

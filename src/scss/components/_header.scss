@@ -1,0 +1,18 @@
+header {
+    .container {
+        height: 200px;
+        background: url('../../img/logo.svg') no-repeat;
+        background-position: calc(100% - 50px) bottom;
+        background-size: calc(60/100 * 260px) calc(60/100 * 260px);
+
+        @media #{$ss-bp} {
+            background-position: calc(100% - 36px) bottom;
+        }
+
+        @media #{$md-bp} {
+            height: 350px;
+            background-position: calc(100% - 60px) bottom;
+            background-size: 260px 260px;
+        }
+    }
+}

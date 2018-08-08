@@ -1,0 +1,118 @@
+
+// Headings
+// --------
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-pri;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+    line-height: 100%;
+
+    @media #{$md-bp} {
+        font-size: 6.5em;
+    }
+
+    @media #{$lg-bp} {
+        font-size: 8.5em;
+    }
+}
+
+// Subheadings
+// -----------
+h2 {
+    font-size: 2.8em;
+    font-weight: 600;
+    line-height: 100%;
+
+    @media #{$sm-bp} {
+        font-size: 3.2em;
+    }
+
+    @media #{$md-bp} {
+        font-size: 3.4em;
+    }
+
+    @media #{$lg-bp} {
+        font-size: 5.4em;
+    }
+}
+
+h3 {
+    font-size: 5.8em;
+    font-weight: 600;
+    line-height: 100%;
+
+    @media #{$lg-bp} {
+        font-size: 6.5em;
+    }
+
+    @media #{$lg-bp} {
+        font-size: 8.5em;
+    }
+}
+
+h4 {
+    font-size: 2.4em;
+    font-weight: 700;
+    line-height: 100%;
+
+    @media #{$md-bp} {
+        font-size: 2.8em;
+    }
+
+    @media #{$lg-bp} {
+        font-size: 3.4em;
+    }
+}
+
+h5 {
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: 1.2em;
+
+    @media #{$lg-bp} {
+        font-size: 2.4em;
+    }
+}
+
+// Body Text
+// ---------
+p {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: $font-pri;
+    line-height: 100%;
+
+    @media #{$md-bp} {
+        font-size: 2.0em;
+        line-height: 1.2
+    }
+
+    @media #{$lg-bp} {
+        font-size: 2.8em;
+    }
+
+    &:hover, &active {
+        text-decoration: none;
+    }
+}
+
+a, a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// Alignment
+//----------
+.text-center {
+    text-align: center;
+}
+
+// Utility
+.block-link {
+    display: block;
+}

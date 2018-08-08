@@ -1,0 +1,64 @@
+section.about__us {
+    .container {
+
+        overflow: visible;
+        padding-top: 70px;
+        background: url('../../img/backing.svg') no-repeat left;
+        background-size: 60% 333px;
+        background-position: 50px top;
+
+        @media #{$ss-bp} {
+            background-size: 231px 333px;
+            background-position: 50px top;
+        }
+
+        @media #{$md-bp} {
+            margin-top: -67px;
+            background-size: 430px 618px;
+            padding-top: 120px;
+            background-position: 86px top;
+        }
+
+        @media #{$lg-bp} {
+            margin-top: -67px;
+            background-size: 551px 798px;
+            padding-top: 166px;
+            background-position: 116px top;
+        }
+
+        .about__us-title {
+            margin-bottom: 20px;
+
+            @media #{$md-bp} {
+                margin-bottom: 54px;
+            }
+        }
+
+        .about__us-title--mini {
+            text-transform: uppercase;
+            margin-bottom: 16px;
+
+            @media #{$lg-bp} {
+                margin-bottom: 24px;
+            }
+        }
+
+        .about__us-desc {
+
+            p {
+                margin-bottom: 1.2em;
+                line-height: 1.2em;
+
+                @media #{$sm-bp} {
+
+                    &:nth-of-type(2) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// *** NOTICE ***
+// further font type styling can be found in type.scss

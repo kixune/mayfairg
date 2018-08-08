@@ -1,0 +1,100 @@
+section.office__bearers {
+    .container {
+
+        .office__bearers-title {
+            margin-bottom: 20px;
+
+            @media #{$md-bp} {
+                margin-bottom: 40px;
+            }
+        }
+
+        .office__bearers-desc {
+            margin-bottom: 40px;
+
+            @media #{$md-bp} {
+                margin-bottom: 80px;
+            }
+
+            p {
+                line-height: 1.2em;
+            }
+        }
+
+        .office__bearers-vips,
+        .office__bearer-core--last {
+
+            margin-bottom: 40px;
+
+            @media #{$md-bp} {
+                margin-bottom: 80px;
+            }
+
+        }
+
+        .office__bearer-comm--last {
+            margin-bottom: 0;
+        }
+
+        .office__bearer-vip,
+        .office__bearer-core,
+        .office__bearer-comm {
+            text-transform: capitalize;
+            margin-bottom: 24px;
+        }
+
+        .office__bearer-vip {
+            .office__bearer-name {
+
+                @media #{$md-bp} {
+                    font-size: 2.8em;
+                }
+
+                @media #{$lg-bp} {
+                    font-size: 3.4em;
+                }
+            }
+
+            .office__bearer-role {
+                line-height: 1.2em;
+
+                @media #{$lg-bp} {
+                    font-size: 2.8em;
+                }
+            }
+        }
+
+        .office__bearer-core,
+        .office__bearer-core--last,
+        .office__bearer-comm,
+        .office__bearer-comm--last {
+            .office__bearer-name {
+                font-size: 1.8em;
+
+                @media #{$md-bp} {
+                    font-size: 2.0em;
+                }
+
+                @media #{$lg-bp} {
+                    font-size: 2.8em;
+                }
+            }
+
+            .office__bearer-role {
+                font-size: 1.6em;
+                line-height: 1.2em;
+
+                @media #{$md-bp} {
+                    font-size: 1.8em;
+                }
+
+                @media #{$lg-bp} {
+                    font-size: 2.4em;
+                }
+            }
+        }
+    }
+}
+
+// *** NOTICE ***
+// further font type styling can be found in type.scss
